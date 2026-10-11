@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="fr-CH" class="js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Big Brother — The original French Tacos · Neuchâtel</title>
+  <meta name="description" content="Big Brother, the original French Tacos à Neuchâtel : tacos, tacos bowls, signature wraps, Crousty Brother et snacks. Sauce fromagère maison. Av. du Premier-Mars 6 — commande sur Uber Eats.">
+  <meta name="theme-color" content="#1a120d">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_CH">
+  <meta property="og:title" content="Big Brother — The original French Tacos">
+  <meta property="og:description" content="Tacos, bowls, signature wraps, Crousty Brother et snacks à Neuchâtel. Sauce fromagère maison.">
+  <meta property="og:image" content="https://big-brother.ch/wp-content/uploads/2024/03/BB2-1-frame-at-0m12s.jpg">
+  <link rel="icon" href="https://big-brother.ch/wp-content/uploads/2024/03/cropped-bb-fav-32x32.png" sizes="32x32">
+  <link rel="icon" href="https://big-brother.ch/wp-content/uploads/2024/03/cropped-bb-fav-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="https://big-brother.ch/wp-content/uploads/2024/03/cropped-bb-fav-180x180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Geist:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Big Brother",
+    "slogan": "The original French Tacos",
+    "url": "https://big-brother.ch/",
+    "image": "https://big-brother.ch/wp-content/uploads/2024/04/big-brother-logo-trasparent.png",
+    "telephone": "+41 32 710 14 34",
+    "email": "info@big-brother.ch",
+    "servesCuisine": ["French tacos", "Street food"],
+    "hasMenu": "https://big-brother.ch/#carte",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. du Premier-Mars 6",
+      "postalCode": "2000",
+      "addressLocality": "Neuchâtel",
+      "addressCountry": "CH"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "11:00", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "17:30", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:00", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "17:30", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:00", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "17:30", "closes": "22:00" }
+    ],
+    "sameAs": ["https://www.instagram.com/bigbrother.ch/", "https://www.tiktok.com/@bigbrother.ch"]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ============ Sprite : icônes au trait, filigranes d'ingrédients, teintes du logo ============ -->
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Le logo officiel (PNG noir transparent) est recoloré à plat -->
+    <filter id="tint-gold" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feFlood flood-color="#ffbf24"/><feComposite in2="SourceAlpha" operator="in"/>
+    </filter>
+    <filter id="tint-dark" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feFlood flood-color="#1a120d"/><feComposite in2="SourceAlpha" operator="in"/>
+    </filter>
+    <path id="circ" d="M100 100m-78 0a78 78 0 1 1 156 0a78 78 0 1 1-156 0"/>
+  </defs>
+
+  <!-- Icônes (24 × 24) -->
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8.5h14l-1.1 11.6a1 1 0 0 1-1 .9H7.1a1 1 0 0 1-1-.9z"/><path d="M9 10.5V7a3 3 0 0 1 6 0v3.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7.2 3.5h2.4l1.4 4.1-2 1.4a11.5 11.5 0 0 0 6 6l1.4-2 4.1 1.4v2.4a2 2 0 0 1-2.1 2A16.5 16.5 0 0 1 5.2 5.6a2 2 0 0 1 2-2.1z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6.1-6.5-11.1a6.5 6.5 0 0 1 13 0C18.5 14.9 12 21 12 21z"/><circle cx="12" cy="9.9" r="2.3"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15.5M13.5 6l6 6-6 6"/></symbol>
+  <symbol id="i-ne" viewBox="0 0 24 24"><path d="M6.5 17.5 17.5 6.5M8.5 6.5h9v9"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.2 6.8h.01"/></symbol>
+  <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 4v10.6a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14 4c.5 2.7 2.3 4.5 5 4.7"/></symbol>
+  <symbol id="i-chili" viewBox="0 0 24 24"><path d="M16.2 7.3c-1.9-.6-3.6.4-4.4 2.3-1.4 3.4-3.9 6.1-7.8 7.6 4.6 1.9 10.3.1 12.6-4.4 1-2 .9-4.1-.4-5.5z"/><path d="M16.2 7.3c.2-1.5 1.2-2.6 2.7-2.9"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.6 2.5 5.3 5.8.8-4.2 4 1 5.7L12 16.7l-5.1 2.7 1-5.7-4.2-4 5.8-.8z"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2.5c.6 5.2 4.3 8.9 9.5 9.5-5.2.6-8.9 4.3-9.5 9.5-.6-5.2-4.3-8.9-9.5-9.5 5.2-.6 8.9-4.3 9.5-9.5z"/></symbol>
+
+  <!-- Filigranes d'ingrédients (100 × 100), tracés à la main -->
+  <symbol id="wm-chili" viewBox="0 0 100 100"><path d="M71 25C59 20 47 27 43 41 38 59 27 72 11 79c20 7 46-1 58-19 8-12 12-26 2-35z"/><path d="M71 25c1-8 7-13 15-14"/><path d="M61 24c4 4 12 5 17 0"/><path d="M52 44c-2 9-7 17-14 23"/></symbol>
+  <symbol id="wm-fries" viewBox="0 0 100 100"><rect x="30" y="16" width="6" height="34" rx="1" transform="rotate(-7 33 33)"/><rect x="39" y="9" width="6" height="41" rx="1" transform="rotate(-2 42 30)"/><rect x="48" y="12" width="6" height="38" rx="1" transform="rotate(3 51 31)"/><rect x="57" y="8" width="6" height="42" rx="1" transform="rotate(7 60 29)"/><rect x="64" y="18" width="6" height="32" rx="1" transform="rotate(12 67 34)"/><path d="M26 46h48l-8 46H34z"/><path d="M26 46c15 10 33 10 48 0"/></symbol>
+  <symbol id="wm-cheese" viewBox="0 0 100 100"><path d="M10 60 61 28l30 16v30L10 82z"/><path d="M10 60 91 44"/><circle cx="34" cy="71" r="5"/><circle cx="60" cy="64" r="6.5"/><circle cx="81" cy="67" r="3.5"/><ellipse cx="55" cy="41" rx="5" ry="2.5" transform="rotate(-18 55 41)"/></symbol>
+  <symbol id="wm-ring" viewBox="0 0 100 100"><ellipse cx="50" cy="50" rx="40" ry="27" transform="rotate(-14 50 50)"/><ellipse cx="50" cy="50" rx="22" ry="12" transform="rotate(-14 50 50)"/><path d="M22 35c3 2 5 1 7-1M70 25c2 3 5 3 7 2M80 61c-3 1-4 4-3 6M27 72c2-2 5-2 7 0"/></symbol>
+  <symbol id="wm-tomato" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40"/><circle cx="50" cy="50" r="33"/><circle cx="50" cy="50" r="6"/><path d="M50 43c-5-8-5-15 0-21 5 6 5 13 0 21z"/><path d="M50 43c-5-8-5-15 0-21 5 6 5 13 0 21z" transform="rotate(90 50 50)"/><path d="M50 43c-5-8-5-15 0-21 5 6 5 13 0 21z" transform="rotate(180 50 50)"/><path d="M50 43c-5-8-5-15 0-21 5 6 5 13 0 21z" transform="rotate(270 50 50)"/></symbol>
+  <symbol id="wm-leaf" viewBox="0 0 100 100"><path d="M50 93C24 84 9 60 15 32c6 2 9-5 16-7 2 6 9-3 15 0 2 7 10 2 15 8-1 7 9 10 8 19-6 3 1 12-6 19-8 1-10 12-17 17-2 2-4 4-6 5z"/><path d="M50 93c-4-22-1-46 12-66"/><path d="M47 72c-9-4-15-10-20-18M51 54c7-2 13-7 18-14M49 84c8-4 14-9 19-16"/></symbol>
+  <symbol id="wm-tacos" viewBox="0 0 100 100"><rect x="12" y="28" width="76" height="46" rx="10"/><path d="M23 37l17 27M36 33l22 35M51 33l22 35M66 34l13 21"/></symbol>
+  <symbol id="wm-bottle" viewBox="0 0 100 100"><path d="M35 42h30l2 46a5 5 0 0 1-5 5H38a5 5 0 0 1-5-5z"/><path d="M39 42l4-12h14l4 12"/><path d="M47 30l2-16h2l2 16"/><path d="M50 4c-2 3-3 5 0 7 3-2 2-4 0-7z"/><path d="M40 57h20M40 75h20"/></symbol>
+  <symbol id="wm-drum" viewBox="0 0 100 100"><ellipse cx="64" cy="35" rx="24" ry="19" transform="rotate(-35 64 35)"/><path d="M46 52 29 69M52 58 35 75"/><circle cx="25" cy="70" r="6"/><circle cx="31" cy="79" r="6"/><path d="M60 26c6-1 11 2 13 7"/></symbol>
+  <symbol id="wm-can" viewBox="0 0 100 100"><rect x="31" y="14" width="38" height="74" rx="7"/><path d="M31 24h38M31 78h38"/><path d="M44 14v-3h12v3"/><path d="M40 47c5-6 11 6 20 0"/></symbol>
+  <symbol id="wm-doner" viewBox="0 0 100 100"><path d="M50 4v92"/><path d="M33 18c5-4 29-4 34 0l-6 60c-2 4-20 4-22 0z"/><path d="M35 33c9 3 21 3 30 0M36 48c8 3 20 3 28 0M37 63c8 3 18 3 26 0"/><path d="M30 92h40"/></symbol>
+  <symbol id="wm-bowl" viewBox="0 0 100 100"><path d="M10 48h80c0 22-18 38-40 38S10 70 10 48z"/><path d="m38 86-2 6h28l-2-6"/><path d="M16 48c2-8 10-12 18-7 4-8 16-10 22-2 6-6 18-4 20 6 4-1 8 0 10 3"/><path d="M40 30c-5-6 5-9 0-16M56 30c-5-6 5-9 0-16"/></symbol>
+  <symbol id="wm-jar" viewBox="0 0 100 100"><path d="M24 22h52v9H24z"/><path d="M28 31h44v51a8 8 0 0 1-8 8H36a8 8 0 0 1-8-8z"/><path d="M28 49c7 4 15-4 22 0s15 4 22 0M28 66c7 4 15-4 22 0s15 4 22 0"/><path d="M69 22 79 3"/><ellipse cx="81" cy="4" rx="3.5" ry="5.5" transform="rotate(28 81 4)"/></symbol>
+  <symbol id="wm-spark" viewBox="0 0 100 100"><path d="M50 8c3 24 18 39 42 42-24 3-39 18-42 42-3-24-18-39-42-42 24-3 39-18 42-42z"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Aller au contenu</a>
+
+<!-- ============ Écran d'ouverture : le cheddar coule et libère la page ============ -->
+<div class="loader" data-loader aria-hidden="true">
+  <svg class="loader__drip" preserveAspectRatio="none"><path/></svg>
+  <div class="loader__inner">
+    <svg class="loader__logo" viewBox="0 0 1000 720"><image href="https://big-brother.ch/wp-content/uploads/2024/04/big-brother-logo-trasparent.png" width="1000" height="720" filter="url(#tint-dark)"/></svg>
+    <span class="loader__count"><span data-count>0</span>%</span>
+  </div>
+</div>
+
+<!-- ============ En-tête ============ -->
+<header class="nav" data-nav>
+  <nav class="nav__left" aria-label="Navigation principale">
+    <a class="pill" href="#carte"><span class="pill__t">La carte</span></a>
+    <a class="pill" href="#avis"><span class="pill__t">Avis</span></a>
+    <a class="pill" href="#infos"><span class="pill__t">Horaires</span></a>
+    <a class="pill" href="#contact"><span class="pill__t">Contact</span></a>
+  </nav>
+  <a class="nav__brand" href="#top" aria-label="Big Brother — retour en haut">
+    <svg class="mono" viewBox="186 0 628 412" aria-hidden="true"><image href="https://big-brother.ch/wp-content/uploads/2024/04/big-brother-logo-trasparent.png" width="1000" height="720" filter="url(#tint-gold)"/></svg>
+  </a>
+  <div class="nav__right">
+    <a class="pill nav__franchise" href="https://big-brother-franchise.ch/" target="_blank" rel="noopener"><span class="pill__t">Franchise</span></a>
+    <a class="pill pill--fill" href="https://www.ubereats.com/ch/store/big-brother/QVvEQlRnUPWz1nYEeLNfYQ" target="_blank" rel="noopener" data-magnetic><span class="pill__t">Commander</span><svg class="ico"><use href="#i-bag"/></svg></a>
+    <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu" data-burger><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ Menu plein écran (mobile) ============ -->
+<div class="menu" id="menu" data-menu>
+  <svg class="menu__drip" preserveAspectRatio="none" aria-hidden="true"><path/></svg>
+  <div class="menu__inner">
+    <nav class="menu__nav" aria-label="Menu">
+      <a class="menu__link" href="#compose">Tacos</a>
+      <a class="menu__link" href="#wraps">Wraps</a>
+      <a class="menu__link" href="#crousty">Crousty</a>
+      <a class="menu__link" href="#snacks">Snacks</a>
+      <a class="menu__link" href="#avis">Avis</a>
+      <a class="menu__link" href="#infos">Horaires</a>
+      <a class="menu__link" href="#contact">Contact</a>
+    </nav>
+    <div class="menu__foot" data-menu-fade>
+      <span class="status status--dark" data-status><span class="status__dot"></span><span class="status__text">Horaires</span></span>
+      <a href="tel:+41327101434">+41 32 710 14 34</a>
+      <a href="https://maps.app.goo.gl/dNeg4RZbBV6JJfC9A" target="_blank" rel="noopener">Av. du <span class="nw">Premier-Mars 6</span>, Neuchâtel</a>
+      <a class="pill pill--dark" href="https://big-brother-franchise.ch/" target="_blank" rel="noopener"><span class="pill__t">Franchise</span></a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============ Hero : BIG ◯ BROTHER, la pilule vidéo s'ouvre au scroll ============ -->
+  <section class="hero" id="top" data-hero>
+    <div class="hero__inner">
+      <div class="hero__top">
+        <p class="eyebrow" data-hero-fade>The original French Tacos</p>
+        <p class="eyebrow hero__loc" data-hero-fade>Neuchâtel — Av. du <span class="nw">Premier-Mars 6</span></p>
+        <span class="status" data-status data-hero-fade><span class="status__dot"></span><span class="status__text">Horaires</span></span>
+      </div>
+      <div class="hero__mid" data-hero-mid>
+        <h1 class="hero__title" data-hero-title aria-label="Big Brother">
+          <span class="hero__word hero__word--l" data-jelly>Big</span>
+          <span class="hero__pill" data-hero-pill aria-hidden="true"></span>
+          <span class="hero__word hero__word--r" data-jelly>Brother</span>
+        </h1>
+      </div>
+      <div class="hero__bottom">
+        <p class="hero__lead" data-hero-fade>Tacos, bowls, signature wraps, Crousty Brother &amp; snacks. Sauce fromagère maison, gratinage au choix.</p>
+        <div class="hero__cta" data-hero-fade>
+          <a class="pill pill--fill pill--lg" href="https://www.ubereats.com/ch/store/big-brother/QVvEQlRnUPWz1nYEeLNfYQ" target="_blank" rel="noopener" data-magnetic><span class="pill__t">Commander</span><svg class="ico"><use href="#i-bag"/></svg></a>
+          <a class="pill pill--lg" href="#carte"><span class="pill__t">Voir la carte</span></a>
+        </div>
+        <p class="hero__scroll eyebrow" data-hero-fade><span>Scroll</span><i></i></p>
+      </div>
+    </div>
+    <div class="hero__stage" data-hero-stage aria-hidden="true">
+      <video data-autoplay muted loop playsinline preload="auto" poster="https://big-brother.ch/wp-content/uploads/2024/03/BB2-1-frame-at-0m12s.jpg">
+        <source src="https://big-brother.ch/wp-content/uploads/2024/03/BB2-1.mp4" type="video/mp4">
+      </video>
+      <div class="hero__scrim"></div>
+      <div class="hero__over">
+        <span class="hero__line">Grillé.</span>
+        <span class="hero__line">Gratiné.</span>
+        <span class="hero__line">Généreux.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Bandeau défilant ============ -->
+  <section class="band" aria-label="Au menu">
+    <div class="rule"></div>
+    <div class="marquee" data-marquee data-dir="-1">
+      <div class="marquee__track">
+        <div class="marquee__group"><span>Tacos</span><svg class="marquee__star"><use href="#i-spark"/></svg><span>Tacos bowl</span><svg class="marquee__star"><use href="#i-spark"/></svg><span>Signature wraps</span><svg class="marquee__star"><use href="#i-spark"/></svg><span>Crousty Brother</span><svg class="marquee__star"><use href="#i-spark"/></svg><span>Snacks</span><svg class="marquee__star"><use href="#i-spark"/></svg></div>
+      </div>
+    </div>
+    <div class="marquee marquee--outline" data-marquee data-dir="1">
+      <div class="marquee__track">
+        <div class="marquee__group"><span>Sauce fromagère maison</span><svg class="marquee__star"><use href="#i-spark"/></svg><span>The original French Tacos</span><svg class="marquee__star"><use href="#i-spark"/></svg><span>Neuchâtel</span><svg class="marquee__star"><use href="#i-spark"/></svg></div>
+      </div>
+    </div>
+    <div class="rule"></div>
+  </section>
+
+  <!-- ============ Le concept ============ -->
+  <section class="sec concept" id="concept">
+    <div class="wm" aria-hidden="true">
+      <svg class="wm__i" style="--x:3%;--y:8%;--sn:150" data-speed=".7" data-r="-18"><use href="#wm-chili"/></svg>
+      <svg class="wm__i" style="--x:44%;--y:78%;--sn:190" data-speed="1" data-r="10"><use href="#wm-cheese"/></svg>
+      <svg class="wm__i" style="--x:58%;--y:2%;--sn:96" data-speed=".4" data-r="0"><use href="#wm-tomato"/></svg>
+      <svg class="wm__i" style="--x:12%;--y:70%;--sn:120" data-speed=".5" data-r="24"><use href="#wm-leaf"/></svg>
+    </div>
+    <div class="concept__grid">
+      <div class="concept__main">
+        <div class="sec__head" data-reveal><span class="eyebrow">Le concept</span><span class="rule"></span></div>
+        <p class="concept__text" data-highlight>Ton tacos, tu le composes&#8239;: une, deux ou trois viandes <span class="ipill" data-keep><svg><use href="#wm-drum"/></svg></span>, la sauce fromagère maison <span class="ipill" data-keep><svg><use href="#wm-cheese"/></svg></span>, ta sauce préférée <span class="ipill" data-keep><svg><use href="#wm-chili"/></svg></span> et un gratinage qui file. Simple, double ou maxi&#8239;: à toi de voir.</p>
+        <div class="concept__cta" data-reveal>
+          <a class="pill pill--fill pill--lg" href="#compose" data-magnetic><span class="pill__t">Compose ton tacos</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <div class="concept__media">
+        <div class="capsule" data-capsule>
+          <video data-autoplay muted loop playsinline preload="metadata" poster="https://big-brother.ch/wp-content/uploads/2024/03/BB-1MOV-1-frame-at-0m1s.jpg">
+            <source src="https://big-brother.ch/wp-content/uploads/2024/03/BB-1MOV-1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="rot-badge" aria-hidden="true">
+          <svg viewBox="0 0 200 200" class="rot-badge__ring" data-spin><text><textPath href="#circ">Sauce fromagère maison · The original French Tacos · </textPath></text></svg>
+          <svg class="rot-badge__ico"><use href="#wm-cheese"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="carte">
+
+  <!-- ============ 01 · Compose ton tacos (tacos & tacos bowl) ============ -->
+  <section class="sec compose" id="compose">
+    <div class="wm" aria-hidden="true">
+      <svg class="wm__i" style="--x:91%;--y:4%;--sn:130" data-speed=".6" data-r="14"><use href="#wm-bottle"/></svg>
+      <svg class="wm__i" style="--x:40%;--y:46%;--sn:170" data-speed="1" data-r="-8"><use href="#wm-fries"/></svg>
+      <svg class="wm__i" style="--x:90%;--y:58%;--sn:150" data-speed=".8" data-r="-16"><use href="#wm-ring"/></svg>
+      <svg class="wm__i" style="--x:4%;--y:88%;--sn:110" data-speed=".5" data-r="0"><use href="#wm-spark"/></svg>
+    </div>
+
+    <div class="compose__grid">
+      <aside class="compose__aside">
+        <div class="compose__sticky">
+          <div class="sec__head" data-reveal><span class="eyebrow">01 — Le tacos</span><span class="rule"></span></div>
+          <h2 class="h-xl compose__title" data-split aria-label="Compose ton tacos">Compose ton <span class="flip" data-flip><span>tacos</span><span>bowl</span></span></h2>
+          <div class="seg" data-seg="mode" role="group" aria-label="Tacos ou tacos bowl" data-reveal>
+            <span class="seg__thumb" aria-hidden="true"></span>
+            <button type="button" data-v="tacos" aria-pressed="true">Tacos</button>
+            <button type="button" data-v="bowl" aria-pressed="false">Tacos bowl</button>
+          </div>
+
+          <div class="ticket" id="ticket" data-ticket data-reveal>
+            <div class="ticket__head">
+              <svg class="mono" viewBox="186 0 628 412" aria-hidden="true"><image href="https://big-brother.ch/wp-content/uploads/2024/04/big-brother-logo-trasparent.png" width="1000" height="720" filter="url(#tint-gold)"/></svg>
+              <span class="caption">Big Brother · Neuchâtel</span>
+            </div>
+            <p class="ticket__name" data-t-name>Ton tacos simple</p>
+            <ul class="ticket__lines" data-t-lines aria-live="polite"></ul>
+            <div class="ticket__total">
+              <span class="caption">Total</span>
+              <span class="ticket__sum"><span class="ticket__chf">CHF</span><strong class="odo" data-t-total>12.50</strong></span>
+            </div>
+            <p class="ticket__note">Total indicatif, calculé avec les prix de la carte.</p>
+            <div class="ticket__cta">
+              <a class="pill pill--fill" href="https://www.ubereats.com/ch/store/big-brother/QVvEQlRnUPWz1nYEeLNfYQ" target="_blank" rel="noopener"><span class="pill__t">Commander sur Uber Eats</span><svg class="ico"><use href="#i-ne"/></svg></a>
+              <button class="pill" type="button" data-reset><span class="pill__t">Recommencer</span></button>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <form class="compose__steps" data-builder action="#" onsubmit="return false">
+
+        <fieldset class="step" data-reveal>
+          <legend class="step__head"><span class="step__n"></span><span class="step__t">Ta taille</span></legend>
+          <div class="sizes">
+            <label class="size"><input type="radio" name="size" value="simple" data-meats="1" data-price="12.50" data-label="simple" checked><span class="size__card"><span class="size__top"><span class="size__name">Simple</span><span class="caption">1 viande</span></span><span class="size__price"><small>CHF</small>12.50</span></span></label>
+            <label class="size"><input type="radio" name="size" value="double" data-meats="2" data-price="15.00" data-label="double"><span class="size__card"><span class="size__top"><span class="size__name">Double</span><span class="caption">2 viandes</span></span><span class="size__price"><small>CHF</small>15.00</span></span></label>
+            <label class="size"><input type="radio" name="size" value="maxi" data-meats="3" data-price="17.50" data-label="maxi"><span class="size__card"><span class="size__top"><span class="size__name">Maxi</span><span class="caption">3 viandes</span></span><span class="size__price"><small>CHF</small>17.50</span></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-reveal>
+          <legend class="step__head"><span class="step__n"></span><span class="step__t">Tes viandes</span></legend>
+          <p class="step__hint"><b data-meat-count>0</b>&#8239;/&#8239;<b data-meat-max>1</b> — <span data-meat-help>choisis 1 viande</span></p>
+          <div class="opts" data-meats>
+            <label class="opt"><input type="checkbox" name="meat" value="Escalope"><span class="opt__b">Escalope <small>poulet</small></span></label>
+            <label class="opt"><input type="checkbox" name="meat" value="Nuggets"><span class="opt__b">Nuggets <small>poulet</small></span></label>
+            <label class="opt"><input type="checkbox" name="meat" value="Cordon bleu"><span class="opt__b">Cordon bleu <small>poulet</small></span></label>
+            <label class="opt"><input type="checkbox" name="meat" value="Tenders"><span class="opt__b">Tenders <small>poulet</small></span></label>
+            <label class="opt"><input type="checkbox" name="meat" value="Kebab"><span class="opt__b">Kebab <small>bœuf, veau, poulet</small></span></label>
+            <label class="opt"><input type="checkbox" name="meat" value="Merguez"><span class="opt__b">Merguez <small>bœuf, agneau</small></span></label>
+            <label class="opt"><input type="checkbox" name="meat" value="Viande hachée"><span class="opt__b">Viande hachée <small>bœuf</small></span></label>
+            <label class="opt"><input type="checkbox" name="meat" value="Falafel"><span class="opt__b">Falafel <small>végétarien</small></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-reveal>
+          <legend class="step__head"><span class="step__n"></span><span class="step__t">La base</span></legend>
+          <div data-only="tacos">
+            <p class="step__hint">Une base au choix, incluse</p>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="base" value="Mozzarella" checked><span class="opt__b">Mozzarella</span></label>
+              <label class="opt"><input type="radio" name="base" value="Sauce fromagère maison"><span class="opt__b">Sauce fromagère maison</span></label>
+            </div>
+          </div>
+          <div data-only="bowl" hidden>
+            <p class="step__hint">Base frites — un fromage au choix, inclus</p>
+            <div class="opts">
+              <span class="opt opt--fixed"><span class="opt__b"><svg class="ico"><use href="#i-check"/></svg>Frites</span></span>
+              <label class="opt"><input type="radio" name="cheese" value="Mozzarella" checked disabled><span class="opt__b">Mozzarella</span></label>
+              <label class="opt"><input type="radio" name="cheese" value="Sauce fromagère" disabled><span class="opt__b">Sauce fromagère</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-reveal>
+          <legend class="step__head"><span class="step__n"></span><span class="step__t">Tes sauces</span></legend>
+          <p class="opts__label"><svg class="ico ico--hot"><use href="#i-chili"/></svg>Piquantes</p>
+          <div class="opts">
+            <label class="opt opt--hot"><input type="checkbox" name="sauce" value="Algérienne"><span class="opt__b">Algérienne</span></label>
+            <label class="opt opt--hot"><input type="checkbox" name="sauce" value="Marocaine"><span class="opt__b">Marocaine</span></label>
+            <label class="opt opt--hot"><input type="checkbox" name="sauce" value="Samouraï"><span class="opt__b">Samouraï</span></label>
+            <label class="opt opt--hot"><input type="checkbox" name="sauce" value="Harissa"><span class="opt__b">Harissa</span></label>
+            <label class="opt opt--hot"><input type="checkbox" name="sauce" value="Sriracha"><span class="opt__b">Sriracha</span></label>
+          </div>
+          <p class="opts__label">Classiques</p>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" name="sauce" value="Blanche"><span class="opt__b">Blanche</span></label>
+            <label class="opt"><input type="checkbox" name="sauce" value="Cocktail"><span class="opt__b">Cocktail</span></label>
+            <label class="opt"><input type="checkbox" name="sauce" value="Tartare"><span class="opt__b">Tartare</span></label>
+            <label class="opt"><input type="checkbox" name="sauce" value="Mayonnaise"><span class="opt__b">Mayonnaise</span></label>
+            <label class="opt"><input type="checkbox" name="sauce" value="Ketchup"><span class="opt__b">Ketchup</span></label>
+            <label class="opt"><input type="checkbox" name="sauce" value="Biggy Burger"><span class="opt__b">Biggy Burger</span></label>
+            <label class="opt"><input type="checkbox" name="sauce" value="Curry"><span class="opt__b">Curry</span></label>
+            <label class="opt"><input type="checkbox" name="sauce" value="Andalouse"><span class="opt__b">Andalouse</span></label>
+            <label class="opt"><input type="checkbox" name="sauce" value="Barbecue"><span class="opt__b">Barbecue</span></label>
+            <label class="opt"><input type="checkbox" name="sauce" value="Ail"><span class="opt__b">Ail</span></label>
+            <label class="opt"><input type="checkbox" name="sauce" value="Moutarde"><span class="opt__b">Moutarde</span></label>
+            <label class="opt"><input type="checkbox" name="sauce" value="Brazil"><span class="opt__b">Brazil</span></label>
+            <label class="opt"><input type="checkbox" name="sauce" value="Sweet chili"><span class="opt__b">Sweet chili</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-only="tacos" data-reveal>
+          <legend class="step__head"><span class="step__n"></span><span class="step__t">Le gratinage</span></legend>
+          <p class="step__hint">CHF 2.00 par fromage</p>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" name="gratin" value="Raclette" data-price="2.00"><span class="opt__b">Raclette <em>+2.00</em></span></label>
+            <label class="opt"><input type="checkbox" name="gratin" value="Cheddar" data-price="2.00"><span class="opt__b">Cheddar <em>+2.00</em></span></label>
+            <label class="opt"><input type="checkbox" name="gratin" value="Mozzarella" data-price="2.00"><span class="opt__b">Mozzarella <em>+2.00</em></span></label>
+            <label class="opt opt--hot"><input type="checkbox" name="gratin" value="Cheddar épicé" data-price="2.00"><span class="opt__b">Cheddar épicé <em>+2.00</em></span></label>
+            <label class="opt"><input type="checkbox" name="gratin" value="Chèvre" data-price="2.00"><span class="opt__b">Chèvre <em>+2.00</em></span></label>
+            <label class="opt"><input type="checkbox" name="gratin" value="Parmesan" data-price="2.00"><span class="opt__b">Parmesan <em>+2.00</em><i class="tag tag--new">New</i></span></label>
+          </div>
+          <div class="opts opts--sub" data-miel hidden>
+            <label class="opt"><input type="checkbox" name="miel" value="Miel" data-price="1.00" disabled><span class="opt__b">+ Miel sur le chèvre <em>+1.00</em></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-reveal>
+          <legend class="step__head"><span class="step__n"></span><span class="step__t">Suppléments</span></legend>
+          <button class="pill supp__toggle" type="button" aria-expanded="false" aria-controls="supp" data-supp-toggle><span class="pill__t">Voir les suppléments</span><svg class="ico"><use href="#i-plus"/></svg></button>
+          <div class="supp" id="supp" data-supp>
+            <div class="supp__in">
+              <p class="opts__label">Fromages</p>
+              <div class="opts">
+                <label class="opt"><input type="checkbox" name="supp" value="Cheddar" data-price="2.00"><span class="opt__b">Cheddar <em>2.00</em></span></label>
+                <label class="opt opt--hot"><input type="checkbox" name="supp" value="Cheddar épicé" data-price="2.00"><span class="opt__b">Cheddar épicé <em>2.00</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Vache qui rit" data-price="2.00"><span class="opt__b">Vache qui rit <em>2.00</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Kiri" data-price="2.00"><span class="opt__b">Kiri <em>2.00</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Mozzarella" data-price="2.00"><span class="opt__b">Mozzarella <em>2.00</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Raclette" data-price="2.00"><span class="opt__b">Raclette <em>2.00</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Chèvre" data-price="2.00"><span class="opt__b">Chèvre <em>2.00</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Miel" data-price="1.00"><span class="opt__b">Miel (avec le chèvre) <em>1.00</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Boursin" data-price="2.00"><span class="opt__b">Boursin <em>2.00</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Feta" data-price="2.00"><span class="opt__b">Feta <em>2.00</em><i class="tag tag--new">New</i></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Parmesan" data-price="2.00"><span class="opt__b">Parmesan <em>2.00</em><i class="tag tag--new">New</i></span></label>
+              </div>
+              <p class="opts__label">Légumes &amp; garnitures</p>
+              <div class="opts">
+                <label class="opt"><input type="checkbox" name="supp" value="Salade" data-price="0"><span class="opt__b">Salade <em>offert</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Tomates" data-price="0"><span class="opt__b">Tomates <em>offert</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Oignons" data-price="0"><span class="opt__b">Oignons <em>offert</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Maïs" data-price="1.00"><span class="opt__b">Maïs <em>1.00</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Olives" data-price="1.00"><span class="opt__b">Olives <em>1.00</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Cornichons" data-price="1.00"><span class="opt__b">Cornichons <em>1.00</em></span></label>
+                <label class="opt opt--hot"><input type="checkbox" name="supp" value="Jalapeños" data-price="1.50"><span class="opt__b">Jalapeños <em>1.50</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Oignons crispy" data-price="1.50"><span class="opt__b">Oignons crispy <em>1.50</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Avocat" data-price="2.00"><span class="opt__b">Avocat <em>2.00</em><i class="tag tag--new">New</i></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Poivrons grillés" data-price="2.50"><span class="opt__b">Poivrons grillés <em>2.50</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Aubergines grillées" data-price="2.50"><span class="opt__b">Aubergines grillées <em>2.50</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Œuf dur" data-price="2.50"><span class="opt__b">Œuf dur <em>2.50</em></span></label>
+              </div>
+              <p class="opts__label">Gourmands</p>
+              <div class="opts">
+                <label class="opt"><input type="checkbox" name="supp" value="Bacon de veau" data-price="2.50"><span class="opt__b">Bacon de veau <em>2.50</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Oignons rings" data-price="2.50"><span class="opt__b">Oignons rings <em>2.50</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Mozzarella stick" data-price="2.50"><span class="opt__b">Mozzarella stick <em>2.50</em></span></label>
+                <label class="opt opt--hot"><input type="checkbox" name="supp" value="Cream cheese jalapeños" data-price="2.50"><span class="opt__b">Cream cheese jalapeños <em>2.50</em></span></label>
+                <label class="opt"><input type="checkbox" name="supp" value="Chips nachos" data-price="2.50"><span class="opt__b">Chips nachos <em>2.50</em></span></label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-reveal>
+          <legend class="step__head"><span class="step__n"></span><span class="step__t">La formule</span></legend>
+          <div class="formules">
+            <label class="fopt"><input type="radio" name="formule" value="seul" data-label="Seul" checked><span class="fopt__b"><span class="fopt__name">Seul</span><small>le tacos, rien que lui</small><span class="fopt__price">inclus</span></span></label>
+            <label class="fopt"><input type="radio" name="formule" value="menu" data-label="Menu" data-tacos="4.50" data-bowl="2.50"><span class="fopt__b"><span class="fopt__name" data-fname>Menu</span><small data-finfo>frites + boisson</small><span class="fopt__price" data-fprice>+4.50</span></span></label>
+            <label class="fopt"><input type="radio" name="formule" value="etudiant" data-label="Menu étudiant" data-tacos="3.50" data-bowl="2.00"><span class="fopt__b"><span class="fopt__name" data-fname>Menu étudiant</span><small data-finfo>frites + boisson</small><span class="fopt__price" data-fprice>+3.50</span></span></label>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ 02 · Signature wraps (défilement horizontal épinglé) ============ -->
+  <section class="wraps" id="wraps" data-wraps>
+    <div class="wraps__pin">
+      <div class="wraps__track" data-cursor-zone="Scroll">
+        <div class="wraps__intro">
+          <div>
+            <div class="sec__head"><span class="eyebrow">02 — Signature wraps</span><span class="rule"></span></div>
+            <h2 class="h-xl" data-split>Signature wraps</h2>
+          </div>
+          <ul class="prices">
+            <li><span>Seul</span><b>13.–</b></li>
+            <li><span>Menu signature <small>frites + boisson</small></span><b>17.00</b></li>
+            <li><span>Menu étudiant <small>frites + boisson</small></span><b>16.50</b></li>
+          </ul>
+          <p class="eyebrow wraps__hint">Six signatures <svg class="ico"><use href="#i-arrow"/></svg></p>
+        </div>
+
+        <article class="wcard" data-tilt>
+          <div class="wcard__top"><span class="caption">01</span><span class="caption">Signature</span></div>
+          <svg class="wcard__ico" style="--sn:300" aria-hidden="true"><use href="#wm-doner"/></svg>
+          <div class="wcard__body">
+            <h3 class="wcard__name">Le Spéciale</h3>
+            <ul class="ing"><li>Kebab</li><li>Cheddar</li><li>Salade</li><li>Tomates</li><li>Oignons crispy</li><li>Sauce aïoli</li></ul>
+          </div>
+        </article>
+        <article class="wcard" data-tilt>
+          <div class="wcard__top"><span class="caption">02</span><span class="caption">Signature</span></div>
+          <svg class="wcard__ico" style="--sn:300" aria-hidden="true"><use href="#wm-cheese"/></svg>
+          <div class="wcard__body">
+            <h3 class="wcard__name">Le Fondant</h3>
+            <ul class="ing"><li>Cordon bleu</li><li>Raclette</li><li>Salade</li><li>Tomates</li><li>Oignons crispy</li><li>Sauce fromagère</li></ul>
+          </div>
+        </article>
+        <article class="wcard" data-tilt>
+          <div class="wcard__top"><span class="caption">03</span><span class="caption">Signature</span></div>
+          <svg class="wcard__ico" style="--sn:300" aria-hidden="true"><use href="#wm-drum"/></svg>
+          <div class="wcard__body">
+            <h3 class="wcard__name">Le Crispy</h3>
+            <ul class="ing"><li>Salade</li><li>Tomates</li><li>Oignons crispy</li><li>Tenders</li><li>Cheddar</li><li>Sauce mayonnaise</li></ul>
+          </div>
+        </article>
+        <article class="wcard" data-tilt>
+          <div class="wcard__top"><span class="caption">04</span><span class="caption">Signature <i class="tag tag--hot">Épicé</i></span></div>
+          <svg class="wcard__ico" style="--sn:300" aria-hidden="true"><use href="#wm-chili"/></svg>
+          <div class="wcard__body">
+            <h3 class="wcard__name">Le Farmer</h3>
+            <ul class="ing"><li>Escalope de poulet</li><li>Vache qui rit</li><li>Cheddar</li><li>Jalapeños</li><li>Salade</li><li>Tomates</li><li>Oignons crispy</li><li>Poivrons grillés</li><li>Chili sauce</li></ul>
+          </div>
+        </article>
+        <article class="wcard" data-tilt>
+          <div class="wcard__top"><span class="caption">05</span><span class="caption">Signature</span></div>
+          <svg class="wcard__ico" style="--sn:300" aria-hidden="true"><use href="#wm-tacos"/></svg>
+          <div class="wcard__body">
+            <h3 class="wcard__name">Le Classic</h3>
+            <ul class="ing"><li>Viande hachée</li><li>Cheddar</li><li>Tomates</li><li>Oignons crispy</li><li>Bacon de veau</li><li>Salade</li><li>Sauce Biggy Burger</li></ul>
+          </div>
+        </article>
+        <article class="wcard" data-tilt>
+          <div class="wcard__top"><span class="caption">06</span><span class="caption">Signature · végé</span></div>
+          <svg class="wcard__ico" style="--sn:300" aria-hidden="true"><use href="#wm-leaf"/></svg>
+          <div class="wcard__body">
+            <h3 class="wcard__name">Le Vegi</h3>
+            <ul class="ing"><li>Salade</li><li>Tomates</li><li>Oignons crispy</li><li>Aubergines grillées</li><li>Poivrons grillés</li><li>Falafel</li><li>Sauce blanche</li></ul>
+          </div>
+        </article>
+      </div>
+      <div class="wraps__bar" aria-hidden="true"><i></i></div>
+    </div>
+  </section>
+
+  <!-- ============ 03 · Crousty Brother ============ -->
+  <section class="sec crousty" id="crousty">
+    <div class="wm" aria-hidden="true">
+      <svg class="wm__i" style="--x:5%;--y:14%;--sn:200" data-speed=".8" data-r="-10"><use href="#wm-bowl"/></svg>
+      <svg class="wm__i" style="--x:82%;--y:60%;--sn:180" data-speed="1" data-r="20"><use href="#wm-drum"/></svg>
+      <svg class="wm__i" style="--x:78%;--y:6%;--sn:110" data-speed=".5" data-r="-30"><use href="#wm-ring"/></svg>
+      <svg class="wm__i" style="--x:16%;--y:76%;--sn:80" data-speed=".4" data-r="0"><use href="#wm-spark"/></svg>
+    </div>
+    <div class="sec__head sec__head--center" data-reveal><span class="rule"></span><span class="eyebrow">03 — Nouveau</span><span class="rule"></span></div>
+    <div class="crousty__stage">
+      <h2 class="crousty__title" aria-label="Crousty Brother">
+        <span class="crousty__l1" data-crumble>Crousty</span>
+        <span class="crousty__l2" data-split>Brother</span>
+      </h2>
+      <div class="new-badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200" data-spin><text><textPath href="#circ">New · Nouveau · New · Nouveau · New · Nouveau · </textPath></text></svg>
+        <span>New</span>
+      </div>
+    </div>
+    <p class="crousty__desc" data-reveal>Riz, tenders de poulet croustillants, oignons crispy, servis avec notre sauce secrète, la sauce sweet chili et un assortiment de sauces au choix.</p>
+    <ul class="crousty__prices" data-stagger>
+      <li class="chip"><span>Seul</span><b>12.50</b></li>
+      <li class="chip"><span>Menu Crousty <small>+ boisson</small></span><b>+2.50</b></li>
+      <li class="chip"><span>Menu Crousty étudiant <small>+ boisson</small></span><b>+2.00</b></li>
+    </ul>
+  </section>
+
+  <!-- ============ 04 · Snacks & co ============ -->
+  <section class="sec snacks" id="snacks">
+    <div class="wm" aria-hidden="true">
+      <svg class="wm__i" style="--x:88%;--y:3%;--sn:160" data-speed=".8" data-r="12"><use href="#wm-fries"/></svg>
+      <svg class="wm__i" style="--x:2%;--y:36%;--sn:140" data-speed=".6" data-r="-20"><use href="#wm-ring"/></svg>
+      <svg class="wm__i" style="--x:93%;--y:70%;--sn:130" data-speed="1" data-r="-8"><use href="#wm-can"/></svg>
+      <svg class="wm__i" style="--x:40%;--y:94%;--sn:120" data-speed=".5" data-r="16"><use href="#wm-tomato"/></svg>
+    </div>
+    <div class="sec__head" data-reveal><span class="eyebrow">04 — Snacks &amp; co</span><span class="rule"></span></div>
+    <div class="snacks__head">
+      <h2 class="h-xl" data-split>Snacks</h2>
+      <div class="snacks__pcs" data-reveal>
+        <span class="caption">Combien de pièces&#8239;?</span>
+        <div class="seg" data-seg="pcs" role="group" aria-label="Nombre de pièces">
+          <span class="seg__thumb" aria-hidden="true"></span>
+          <button type="button" data-v="4" aria-pressed="true">4 pcs</button>
+          <button type="button" data-v="6" aria-pressed="false">6 pcs</button>
+          <button type="button" data-v="10" aria-pressed="false">10 pcs</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="snacks__grid">
+      <div>
+        <h3 class="h-sm snacks__sub">À la pièce <span class="caption" data-pcs-label>4 pcs</span></h3>
+        <ul class="menu-list" data-stagger>
+          <li class="row"><span class="row__name">Nuggets</span><span class="row__dots"></span><span class="row__price odo" data-pcs-price data-p4="5.00" data-p6="7.50" data-p10="12.50">5.00</span></li>
+          <li class="row"><span class="row__name">Jalapeños cheese nuggets <i class="tag tag--hot">Épicé</i></span><span class="row__dots"></span><span class="row__price odo" data-pcs-price data-p4="6.00" data-p6="9.00" data-p10="15.00">6.00</span></li>
+          <li class="row"><span class="row__name">Tenders</span><span class="row__dots"></span><span class="row__price odo" data-pcs-price data-p4="6.00" data-p6="9.00" data-p10="15.00">6.00</span></li>
+          <li class="row"><span class="row__name">Chicken wings</span><span class="row__dots"></span><span class="row__price odo" data-pcs-price data-p4="6.00" data-p6="9.00" data-p10="15.00">6.00</span></li>
+          <li class="row"><span class="row__name">Mozzarella sticks</span><span class="row__dots"></span><span class="row__price odo" data-pcs-price data-p4="6.00" data-p6="9.00" data-p10="15.00">6.00</span></li>
+          <li class="row"><span class="row__name">Oignons rings</span><span class="row__dots"></span><span class="row__price odo" data-pcs-price data-p4="5.00" data-p6="7.50" data-p10="12.50">5.00</span></li>
+          <li class="row"><span class="row__name">Falafels</span><span class="row__dots"></span><span class="row__price odo" data-pcs-price data-p4="5.00" data-p6="7.50" data-p10="12.50">5.00</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="h-sm snacks__sub">Frites</h3>
+        <ul class="menu-list" data-stagger>
+          <li class="row"><span class="row__name">Frites moyenne</span><span class="row__dots"></span><span class="row__price">5.00</span></li>
+          <li class="row"><span class="row__name">Grande frites</span><span class="row__dots"></span><span class="row__price">9.00</span></li>
+          <li class="row"><span class="row__name">Frites sauce fromagère</span><span class="row__dots"></span><span class="row__price">6.00</span></li>
+          <li class="row"><span class="row__name">Frites sauce chili cheddar</span><span class="row__dots"></span><span class="row__price">6.00</span></li>
+          <li class="row"><span class="row__name">Frites chili cheddar jalapeños <i class="tag tag--hot">Épicé</i></span><span class="row__dots"></span><span class="row__price">6.50</span></li>
+          <li class="row"><span class="row__name">Frites chili cheddar bacon</span><span class="row__dots"></span><span class="row__price">7.50</span></li>
+          <li class="row"><span class="row__name">Frites fromagère bacon</span><span class="row__dots"></span><span class="row__price">7.50</span></li>
+          <li class="row row--add"><span class="row__name">+ Oignons crispy</span><span class="row__dots"></span><span class="row__price">+1.50</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="snacks__more" data-stagger>
+      <article class="card">
+        <svg class="card__ico" aria-hidden="true"><use href="#wm-leaf"/></svg>
+        <div class="card__head"><h3 class="h-sm">Salade</h3><b class="card__price">12.50</b></div>
+        <p class="card__lead">Salade, tomate, oignons, olive, maïs.</p>
+        <p class="caption card__cap">Viande au choix</p>
+        <ul class="tags"><li>Escalope de poulet</li><li>Tenders de poulet</li><li>Cordon bleu de poulet</li><li>Falafel végi</li></ul>
+      </article>
+      <article class="card">
+        <svg class="card__ico" aria-hidden="true"><use href="#wm-jar"/></svg>
+        <div class="card__head"><h3 class="h-sm">Desserts</h3></div>
+        <ul class="menu-list menu-list--sm">
+          <li class="row"><span class="row__name">Tiramisu spéculos</span><span class="row__dots"></span><span class="row__price">7.00</span></li>
+          <li class="row"><span class="row__name">Tiramisu Nutella</span><span class="row__dots"></span><span class="row__price">7.00</span></li>
+          <li class="row"><span class="row__name">Tiramisu Oreo</span><span class="row__dots"></span><span class="row__price">7.00</span></li>
+        </ul>
+      </article>
+      <article class="card">
+        <svg class="card__ico" aria-hidden="true"><use href="#wm-can"/></svg>
+        <div class="card__head"><h3 class="h-sm">Boissons</h3></div>
+        <ul class="menu-list menu-list--sm">
+          <li class="row"><span class="row__name">Coca-Cola</span><span class="row__dots"></span><span class="row__price">3.00</span></li>
+          <li class="row"><span class="row__name">Thé froid</span><span class="row__dots"></span><span class="row__price">3.00</span></li>
+          <li class="row"><span class="row__name">Oasis</span><span class="row__dots"></span><span class="row__price">3.00</span></li>
+          <li class="row"><span class="row__name">Fanta</span><span class="row__dots"></span><span class="row__price">3.00</span></li>
+          <li class="row"><span class="row__name">Sprite</span><span class="row__dots"></span><span class="row__price">3.00</span></li>
+          <li class="row"><span class="row__name">Eau plate ou gazeuse 0,5&#8239;l</span><span class="row__dots"></span><span class="row__price">4.00</span></li>
+          <li class="row"><span class="row__name">Café</span><span class="row__dots"></span><span class="row__price">3.00</span></li>
+          <li class="row"><span class="row__name">Red Bull</span><span class="row__dots"></span><span class="row__price">4.00</span></li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="sauces" data-reveal>
+      <h3 class="h-sm">Les sauces</h3>
+      <ul class="sauces__list">
+        <li class="sauce sauce--hot">Algérienne</li><li class="sauce sauce--hot">Marocaine</li><li class="sauce sauce--hot">Samouraï</li><li class="sauce sauce--hot">Harissa</li><li class="sauce sauce--hot">Sriracha</li>
+        <li class="sauce">Blanche</li><li class="sauce">Cocktail</li><li class="sauce">Tartare</li><li class="sauce">Mayonnaise</li><li class="sauce">Ketchup</li><li class="sauce">Biggy Burger</li><li class="sauce">Curry</li><li class="sauce">Andalouse</li><li class="sauce">Barbecue</li><li class="sauce">Ail</li><li class="sauce">Moutarde</li><li class="sauce">Brazil</li><li class="sauce">Sweet chili</li>
+      </ul>
+      <p class="caption sauces__key"><svg class="ico ico--hot"><use href="#i-chili"/></svg> = piquante</p>
+    </div>
+  </section>
+
+  </div><!-- /#carte -->
+
+  <!-- ============ 05 · Avis clients ============ -->
+  <section class="sec avis" id="avis">
+    <div class="sec__head" data-reveal><span class="eyebrow">05 — Avis clients</span><span class="rule"></span><span class="eyebrow">Google Reviews</span></div>
+    <h2 class="h-xl avis__title" data-split>Ils en parlent</h2>
+    <div class="reviews" data-reviews data-cursor-zone="Glisser">
+      <div class="reviews__track">
+        <figure class="rcard">
+          <div class="rcard__stars" aria-label="5 étoiles sur 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote class="rcard__q">Incroyable, meilleur tacos de Neuchâtel</blockquote>
+          <figcaption class="rcard__who"><span>luca Toussaint</span><span>Google</span></figcaption>
+        </figure>
+        <figure class="rcard">
+          <div class="rcard__stars" aria-label="5 étoiles sur 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote class="rcard__q">Au top, la qualité et la quantité&#8239;! Je recommande largement</blockquote>
+          <figcaption class="rcard__who"><span>Matthias Junod</span><span>Google</span></figcaption>
+        </figure>
+        <figure class="rcard">
+          <div class="rcard__stars" aria-label="5 étoiles sur 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote class="rcard__q rcard__q--long">J’ai voulu tester une bowl que j’ai commander sur Uber Eats et vraiment j’étais surpris&#8239;!! une bowl vraiment bien garni et vraiment trop bon je recommande c’est arriver chaud alors n’hésitez pas à commander un délice&#8239;!!!</blockquote>
+          <figcaption class="rcard__who"><span>ilhem daroua</span><span>Google</span></figcaption>
+        </figure>
+        <figure class="rcard">
+          <div class="rcard__stars" aria-label="5 étoiles sur 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote class="rcard__q">Les meilleurs 💪🌟 Rapide, bon et efficace. À bientôt</blockquote>
+          <figcaption class="rcard__who"><span>Soares Edgar</span><span>Google</span></figcaption>
+        </figure>
+        <figure class="rcard">
+          <div class="rcard__stars" aria-label="5 étoiles sur 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote class="rcard__q rcard__q--long">Franchement j’ai kiffer c’était la première fois que je suis allé c’était super bon les tacos ils sont bien généreux sur la sauce</blockquote>
+          <figcaption class="rcard__who"><span>Hikma Assoumani</span><span>Google</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 · Horaires & adresse ============ -->
+  <section class="sec infos" id="infos">
+    <div class="wm" aria-hidden="true">
+      <svg class="wm__i" style="--x:86%;--y:8%;--sn:170" data-speed=".8" data-r="-12"><use href="#wm-tacos"/></svg>
+      <svg class="wm__i" style="--x:3%;--y:74%;--sn:140" data-speed=".6" data-r="18"><use href="#wm-bottle"/></svg>
+    </div>
+    <div class="sec__head" data-reveal><span class="eyebrow">06 — Infos pratiques</span><span class="rule"></span></div>
+    <div class="infos__grid">
+      <div class="hours">
+        <h2 class="h-lg" data-split>Horaires</h2>
+        <span class="status status--lg" data-status data-reveal><span class="status__dot"></span><span class="status__text">Horaires</span></span>
+        <table class="hours__table" data-stagger-rows>
+          <tbody>
+            <tr data-days="1,2,3,4"><th scope="row">Lundi – jeudi</th><td>11h – 14h</td><td>17h30 – 22h</td></tr>
+            <tr data-days="5"><th scope="row">Vendredi</th><td>11h – 14h</td><td>17h30 – 23h30</td></tr>
+            <tr data-days="6"><th scope="row">Samedi</th><td colspan="2">11h – 23h30 <span class="caption">non-stop</span></td></tr>
+            <tr data-days="0"><th scope="row">Dimanche</th><td colspan="2">17h30 – 22h</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="where">
+        <h2 class="h-lg" data-split>Adresse</h2>
+        <a class="where__addr" href="https://maps.app.goo.gl/dNeg4RZbBV6JJfC9A" target="_blank" rel="noopener" aria-label="Av. du Premier-Mars 6, 2000 Neuchâtel — itinéraire" data-cursor="Itinéraire" data-reveal>
+          <span data-jelly>Av. du Premier-Mars 6</span>
+          <span class="where__city" data-jelly>2000 Neuchâtel</span>
+        </a>
+        <div class="where__links" data-stagger>
+          <a class="pill pill--lg" href="https://maps.app.goo.gl/dNeg4RZbBV6JJfC9A" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg><span class="pill__t">Itinéraire</span></a>
+          <a class="pill pill--lg" href="tel:+41327101434"><svg class="ico"><use href="#i-phone"/></svg><span class="pill__t">+41 32 710 14 34</span></a>
+          <a class="pill pill--lg" href="mailto:info@big-brother.ch"><svg class="ico"><use href="#i-mail"/></svg><span class="pill__t">info@big-brother.ch</span></a>
+        </div>
+        <div class="where__social" data-reveal>
+          <span class="caption">Follow us</span>
+          <a class="ibtn" href="https://www.instagram.com/bigbrother.ch/" target="_blank" rel="noopener" aria-label="Instagram @bigbrother.ch"><svg class="ico"><use href="#i-insta"/></svg></a>
+          <a class="ibtn" href="https://www.tiktok.com/@bigbrother.ch" target="_blank" rel="noopener" aria-label="TikTok @bigbrother.ch"><svg class="ico"><use href="#i-tiktok"/></svg></a>
+          <span class="caption">@bigbrother.ch</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 07 · Contact ============ -->
+  <section class="sec contact" id="contact">
+    <div class="sec__head" data-reveal><span class="eyebrow">07 — Contact</span><span class="rule"></span></div>
+    <div class="contact__grid">
+      <div>
+        <h2 class="h-xl" data-split>Une question&#8239;?</h2>
+        <p class="contact__lead" data-reveal>Écris-nous via ce formulaire ou directement à <a href="mailto:info@big-brother.ch">info@big-brother.ch</a>.</p>
+      </div>
+      <form class="form" data-contact novalidate data-reveal>
+        <label class="field-wrap"><span class="sr-only">Nom</span><input class="field" type="text" name="nom" placeholder="Nom" autocomplete="name" required></label>
+        <label class="field-wrap"><span class="sr-only">E-mail</span><input class="field" type="email" name="email" placeholder="E-mail" autocomplete="email" required></label>
+        <label class="field-wrap field-wrap--full"><span class="sr-only">Sujet</span><input class="field" type="text" name="sujet" placeholder="Sujet"></label>
+        <label class="field-wrap field-wrap--full"><span class="sr-only">Message</span><textarea class="field field--area" name="message" placeholder="Message" rows="5" required></textarea></label>
+        <div class="form__foot">
+          <p class="form__msg" data-form-msg aria-live="polite">L’envoi ouvre ton application e-mail.</p>
+          <button class="pill pill--fill pill--lg" type="submit" data-magnetic><span class="pill__t">Envoyer</span><svg class="ico"><use href="#i-arrow"/></svg></button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ Franchise ============ -->
+  <section class="franchise">
+    <div class="rule"></div>
+    <a class="franchise__link" href="https://big-brother-franchise.ch/" target="_blank" rel="noopener" aria-label="Envie d’ouvrir ton Big Brother ? Découvrir la franchise" data-cursor="Franchise">
+      <span class="eyebrow">Franchise</span>
+      <span class="franchise__t" data-jelly>Envie d’ouvrir ton <span class="nw">Big Brother&#8239;?</span></span>
+      <span class="franchise__go"><svg class="ico"><use href="#i-ne"/></svg></span>
+    </a>
+    <div class="rule"></div>
+  </section>
+
+</main>
+
+<!-- ============ Pied de page ============ -->
+<footer class="footer" data-footer>
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div class="footer__brand">
+        <svg class="footer__logo" viewBox="0 0 1000 720" role="img" aria-label="Big Brother — The original French Tacos"><image href="https://big-brother.ch/wp-content/uploads/2024/04/big-brother-logo-trasparent.png" width="1000" height="720" filter="url(#tint-gold)"/></svg>
+      </div>
+      <div>
+        <p class="caption footer__k">Adresse</p>
+        <p><a href="https://maps.app.goo.gl/dNeg4RZbBV6JJfC9A" target="_blank" rel="noopener">Av. du <span class="nw">Premier-Mars 6</span><br>2000 Neuchâtel</a></p>
+      </div>
+      <div>
+        <p class="caption footer__k">Contact</p>
+        <p><a href="tel:+41327101434">+41 32 710 14 34</a><br><a href="mailto:info@big-brother.ch">info@big-brother.ch</a></p>
+      </div>
+      <div>
+        <p class="caption footer__k">Suivre</p>
+        <p><a href="https://www.instagram.com/bigbrother.ch/" target="_blank" rel="noopener">Instagram</a><br><a href="https://www.tiktok.com/@bigbrother.ch" target="_blank" rel="noopener">TikTok</a></p>
+      </div>
+    </div>
+    <div class="footer__giant" data-footer-giant aria-hidden="true"><span data-jelly>Big Brother</span></div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> Big Brother — The original French Tacos</span>
+      <a href="https://big-brother-franchise.ch/" target="_blank" rel="noopener">Franchise</a>
+      <a href="#top" class="footer__top">Haut de page ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ Boutons flottants ============ -->
+<div class="dock" data-dock>
+  <a class="dock__btn" href="tel:+41327101434" aria-label="Appeler le restaurant"><span class="dock__label">Appeler</span><svg class="ico"><use href="#i-phone"/></svg></a>
+  <a class="dock__btn dock__btn--fill" href="https://www.ubereats.com/ch/store/big-brother/QVvEQlRnUPWz1nYEeLNfYQ" target="_blank" rel="noopener" aria-label="Commander sur Uber Eats"><span class="dock__label">Commander</span><svg class="ico"><use href="#i-bag"/></svg></a>
+</div>
+
+<!-- Récap du ticket (mobile) -->
+<a class="minibar" href="#ticket" data-minibar>
+  <span class="minibar__name" data-mb-name>Tacos simple</span>
+  <span class="minibar__total">CHF <b data-mb-total>12.50</b></span>
+  <span class="minibar__go">Ticket <svg class="ico"><use href="#i-arrow"/></svg></span>
+</a>
+
+<!-- Curseur -->
+<div class="cursor" data-cursor-el aria-hidden="true">
+  <div class="cursor__ring"></div>
+  <div class="cursor__dot"></div>
+  <div class="cursor__label"><span></span></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
